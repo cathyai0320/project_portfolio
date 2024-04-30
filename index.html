@@ -1,0 +1,569 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Savedbygrace</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Catherine's Portfolio
+						</h1>
+						<p>Welcome to my personal page where I showcase some of my works as well as the projects I worked with a team. <br />
+							These projects are done with love and passion for Machine Learning and Artificial Intelligence. <br />
+							You can browse on the projects below and feel free to contact me for any questions. <br />
+							</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li class="active"><a href="Projects.html">Portfolio</a></li>
+						
+					</ul>
+					<ul class="icons">
+						
+						
+						<li><a href="https://www.linkedin.com/in/cpequino/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li> <!-- Changed from Instagram to LinkedIn -->
+						<li><a href="https://github.com/cathyai0320/-saved-by-grace-" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+					
+				</nav>
+				
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2><a href="#">About me
+									</a></h2>
+									<p>I am a graduate of Software Engineering Technology - Artificial Intelligence at Centennial College. 
+									I worked in the Software Development Industry for more than 10 years and upskilled through obtaining a diploma 
+									in Machine Learning and Artificial Intelligence. During my tenure as a student, I joined competitions and hackathons 
+									to apply my learnings and won several awards including the JMIR Outstanding Science Communication Award by STEM Fellowship’s 
+									National Inter-University Big Data and AI Challenge 2023, Top Finalist for Women in AI Canada Hackathon 2023 
+									and Social Innovation Awardee for Centennial College’s Annual Technology Fair 2024<br /></p>
+								</header>
+								<a href="#" class="image main"><img src="images/cathy.jpeg" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="#" class="button large">Back to top</a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+
+	<div id="main">
+		<section class="posts" id="projects_section">
+
+		
+<article style="text-align: left;"> <!-- Inline CSS to align text to the left -->
+	<header>
+		<h2><a href="https://github.com/cathyai0320/A.I./blob/main/Team_TL%3BDR_STEM_Competition_Pancreas_Cancer_DS.ipynb">Project 1: Predicting the stages of PDAC using non-invasive methods</a></h2>
+	</header>
+	<a href="https://github.com/cathyai0320/A.I./blob/main/Team_TL%3BDR_STEM_Competition_Pancreas_Cancer_DS.ipynb" class="image fit"><img src="images/project11.png" alt="" /></a>
+	
+	<p>I worked with a team of fellow students at Centennial College to join a competition conducted by Stem Fellowship with the theme ‘2023 National Inter-University Big Data and A.I. Challenge’. 
+		Our team won the JMIR Outstanding Science Communication Award for our groundbreaking work on predicting if a patient is diagnosed with a rare disease called Pancreatic Ductal Adenocarcinoma (PDAC)
+		without performing biopsy. Furthermore, we utilize the same biomarkers to classify the stage of the cancer using Machine Learning algorithms.</p>
+	 <!-- Hidden Content -->
+<div id="project1-details" style="display: none;">
+	
+
+	<p style="margin: 0;"><a href="https://www.stemfellowship.org/case-study/national-inter-university-big-data-and-ai-challenge-2023/" target="_blank"><i>Click here for the competition link</i></a></p>
+	<p style="margin: 0;"><a href="https://drive.google.com/file/d/1MGsaiY0VVl7dbK39d08RciKRaE2qyR8u/view" target="_blank"><i>Click here for the manuscript</i></a></p>
+	<p style="margin: 0;"><a href="https://www.youtube.com/watch?v=5XSSuU4z_yM" target="_blank"><i>Click here for the project video presentation</i></a></p><br />
+
+</ul>
+<ul class="actions special">
+</ul>
+
+	<p style="margin: 0;">Using a comprehensive dataset from Bart’s Cancer Institute, our team conducted exhaustive data pre-processing techniques to prepare the data for Machine Learning algorithms:</p>
+	
+	<ul>
+		<strong>i. Renaming variables</strong><br />
+		<strong>ii. Checking and handling of missing values</strong>
+			<ul>
+			  <li>A heatmap of missing values is generated to visualize where missing data exists.</li>
+			  <li>Rows with missing ‘Sample ID’ and ‘Age’ are removed.</li>
+			  <li>The ‘Benign Samples Diagnosis’ missing values are filled with the label “Not Benign”.</li>
+			  <li>The ‘Stage’ column’s missing values are filled with the string “OK”.</li>
+			  <li>A KNN Imputer is used to fill in the remaining missing values for numerical columns.</li>
+			  <li>Linear Correlation Matrix is printed to show the relationship of the features.</li>
+			</ul>
+		  
+		  <a href="#" class="image fit"><img src="images/cmatrix.png" alt="" /></a>
+		<strong>iii. Exploratory Data Analysis:</strong>
+			<ul>
+				<li> Distribution of features such as ‘Age’, ‘Diagnosis’, ‘Stage’, and ‘Sex’ is visualized using histograms and bar charts.</li>
+				<li> A boxplot for each numeric feature is created to investigate potential outliers.</li>
+				<a href="#" class="image fit"><img src="images/outliers.png" alt="" /></a>
+				<li> The count of different categories is visualized using count plots.</li>
+			</ul>
+		
+		<strong>iv. Feature Engineering:</strong>
+			<ul>
+				<li> ‘Age’ is binned into categorical age ranges.</li>
+				<li> A new target variable ‘PDAC_target’ is created to identify if a diagnosis is PDAC or not.</li>
+				</ul>
+		</li>
+		<strong>v. Data Preprocessing:</strong>
+			<ul>
+				<li> One-hot encoding is applied to categorical features to convert them into a format that can be provided to machine learning algorithms.</li>
+			</ul>
+		</li>
+		<strong>vi. Handling Imbalanced Data:</strong>
+			<ul>
+				<li>SMOTE (Synthetic Minority Over-sampling Technique) is used to oversample the minority class in the dataset to balance the classes before fitting the model.</li>
+				<li>For binary prediction (if a patient has PDAC or not):</li>
+				<a href="#" class="image fit"><img src="images/smote.png" alt="" /></a>
+				<li>For multi-clas classification (determining the stage of the disease): </li>
+				<a href="#" class="image fit"><img src="images/stages smote.png" alt="" /></a>
+			</ul>
+		<strong>vii. Scaling Features:</strong>
+			<li>StandardScaler is used within a pipeline for scaling features. This is a common practice to ensure all features contribute equally to the result.</li>
+	
+		viii. Train-Test Split:
+			<li> The data is split into training and test sets, with stratification to maintain the distribution of the target variable.</li>
+		<strong>ix. Label Encoding for Multi-class Classification:</strong>
+			<li>The target variable for a multi-class classification task is label-encoded. This is done because some machine learning models require the target to be a series of integers starting from zero.</li><br
+			
+	<p style="margin: 0;">The above-mentioned steps prepares our dataset for modeling. We then proceed to building a Machine Learning pipeline, hyperparameter tuning and model evaluation.</p>	
+	
+		<ul> 
+		<strong>Decision Tree:</strong>
+		<li> A decision tree classifier is used with parameters for min_samples_leaf, criterion, and max_depth in the hyperparameter tuning process.</li>
+		<li> The model’s performance is evaluated using cross-validation, confusion matrix, classification report, and ROC-AUC score. </li>
+		<a href="#" class="image fit"><img src="images/decision tree roc.png" alt="" /></a>
+		<li>AUC of 0.94, indicating the model’s strong ability to differentiate between PDAC and non-PDAC cases</li>
+		<li>Equal recall of 88% for both PDAC and non-PDAC groups, showing the model’s effectiveness in identifying true cases of each class.</li>
+		<li>Precision of 93% for non-PDAC cases, reflecting the model’s accuracy in predicting negative cases.</li>
+		<li>Precision of 80% for PDAC cases, indicating a strong ability to identify positive cases, although with some room for improvement.</li>
+		<li>F1-scores of 91% for non-PDAC and 83% for PDAC, suggesting a good balance between precision and recall.</li>
+		<li>An overall test accuracy of 88%, showing the model’s robustness in classifying new data.</li><br />
+
+		<strong>Random Forest:</strong>
+		<li>A random forest classifier is included with parameters for min_samples_leaf, criterion, and max_depth to be optimized</li>
+		<li>The training set best score, best parameters, and test performance metrics are printed out.</li>
+		<a href="#" class="image fit"><img src="images/rf roc.png" alt="" /></a>
+		<li>The model has an AUC of 0.95, indicating excellent predictive ability.</li>
+		<li>Achieved a best cross-validation score of 0.85, suggesting strong performance during the training phase.</li>
+		<li>Optimal parameters include entropy criterion, max_depth of 5, and min_samples_leaf of 10.</li>
+		<li>The model reached an accuracy of 84% on the test dataset.</li>
+		<li>High precision (0.94) for predicting non-PDAC cases and good recall (0.90) for detecting PDAC cases.</li>
+		<li>Achieved an F1-score of 0.87 for non-PDAC and 0.79 for PDAC, demonstrating a robust harmonic balance between precision and recall.</li>
+		<li>Correctly identified 63 non-PDAC and 36 PDAC cases, with only 15 false positives and 4 false negatives.</li>
+		
+		<strong>Support Vector Machine (SVM):</strong>
+		<li>The SVC is set up with a grid of hyperparameters such as C, kernel, and gamma to be optimized.</li>
+		<li>Performance evaluation is similar to the above models. </li>
+		<a href="#" class="image fit"><img src="images/svc roc.png" alt="" /></a>
+		<li>The model achieved an AUC of 0.92, signifying strong classification performance.</li>
+		<li>A best cross-validation score of 0.85 was achieved on the training set, suggesting good generalization capability.</li>
+		<li>The best-performing SVC model utilized a linear kernel with gamma set to 0.1 and C parameter set to 1.</li>
+		<li>The model achieved an overall accuracy of 82% on the test data.</li>
+		<li>It exhibited a precision of 0.84 for non-PDAC predictions and 0.79 for PDAC predictions.</li>
+		<li>The recall was 0.91 for non-PDAC predictions and 0.65 for PDAC predictions, indicating better identification of non-PDAC cases.</li>
+		<li>The F1-score was 0.87 for non-PDAC predictions and 0.71 for PDAC predictions, balancing precision and recall.</li>
+		<li>The model correctly predicted 71 non-PDAC cases and 26 PDAC cases.</li>
+
+		<strong>XGBoost:</strong>
+		<li>XGBoost classifier is set up with parameters gamma and max_depth.</li>
+		<li>Before using XGBoost, label encoding is applied to the target variable since XGBoost requires zero-based class labels.</li>
+		<a href="#" class="image fit"><img src="images/xgboost roc.png" alt="" /></a>
+		<li>AUC of 0.95 highlights the model’s exceptional ability to distinguish between classes.</li>
+		<li>Best cross-validation score of 0.83, demonstrating good predictive performance on the training set.</li>
+		<li>‘max_depth set at 15 and gamma set at 1, showing a preference for more complex models to capture nuances in the data.</li>
+		<li>The accuracy of the model on the test set is 87%.</li>
+		<li>Precision of 0.89 for the negative class (non-PDAC) and 0.84 for the positive class (PDAC).</li>
+		<li>Recall of 0.92 for the negative class and 0.78 for the positive class, indicating a higher success rate in identifying negative cases.</li>
+		<li>F1-scores of 0.91 for the negative class and 0.81 for the positive class, showing effective balance between precision and recall.</li>
+		<li>Correct predictions for 72 non-PDAC and 31 PDAC cases, with fewer false positives (6) and false negatives (9) than the previous models.</li>
+
+		<strong>Logistic Regression:</strong>
+		<li>A logistic regression model is used with hyperparameters C, solver, and max_iter.</li>
+		<li>The model’s performance is evaluated on the test set. </li>
+		<a href="#" class="image fit"><img src="images/lr roc.png" alt="" /></a>
+		<li>The AUC for the model is 0.91, which signifies a strong ability to distinguish between the classes.</li>
+		<li>The model achieved a best score of 0.84 during cross-validation, indicating its effective learning from the training data.</li>
+		<li>The model’s hyperparameters were fine-tuned to solver: saga, max_iter: 750, and C: 50, which are parameters controlling the optimization process and regularization strength.</li>
+		<li>An accuracy of 84% was observed on the test dataset, which demonstrates good model performance.</li>
+		<li>Precision for both non-PDAC and PDAC classes is at 0.84, showing a high rate of correct positive predictions.</li>
+		<li>The recall is 0.94 for non-PDAC, indicating the model is very good at identifying true negatives, and 0.65 for PDAC, suggesting the model is moderately good at detecting true positives.</li>
+		<li>F1-scores are 0.88 for non-PDAC predictions and 0.73 for PDAC predictions, reflecting a balanced precision-recall trade-off.</li>
+		<li>The model correctly predicted 73 non-PDAC cases and 26 PDAC cases, while it incorrectly predicted 5 false positives and 14 false negatives.</li>
+
+		<strong>MLP Classifier:</strong>
+		<li>A multilayer perceptron (MLP) classifier is set up for neural network-based classification.</li>
+		<li>Hyperparameters include hidden_layer_sizes, activation, and max_iter.</li>
+		<a href="#" class="image fit"><img src="images/mlp classifier roc.png" alt="" /></a>
+		<li>The model exhibits a high AUC of 0.93, suggesting excellent classification ability.</li>
+		<li>The best score from grid search cross-validation is 0.85, indicating a strong model fit on the training data.</li>
+		<li>The optimal hyperparameters are a logistic activation function, a maximum of 50 iterations, and 2 hidden layers.</li>
+		<li>The model achieved 85% accuracy on the test set, with a high precision of 0.95 for non-PDAC cases.</li>
+		<li>Notably high recall of 0.93 for PDAC cases, showing the model’s capability to identify most true positive cases.</li>
+		<li>The model scored an F1 of 0.88 for non-PDAC and 0.80 for PDAC, indicating a good balance between precision and recall for both classes.</li>
+		<li>Successfully predicted 63 non-PDAC and 37 PDAC cases, with 15 false positives and only 3 false negatives, demonstrating a low rate of missed PDAC cases.</li>
+
+	<strong>Conclusion:</strong> <br />
+		Binary classification result (Predicting if a patient has PDAC): 
+		<a href="#" class="image fit" style="margin: 0; padding: 0; display: block;"><img src="images/binary model results.png" alt="" style="margin: 0; padding: 0; display: block;" /></a><br />
+		Multi-class classification result (Classification of the cancer stage): 
+		<a href="#" class="image fit" style="margin: 0; padding: 0; display: block;"><img src="images/multiclass model results.png" alt="" style="margin: 0; padding: 0; display: block;" /></a><br />
+	
+	<p style="margin: 0;">Our results have shown that bio-markers are a good set of predictors similar to other researchers work. 
+		Also, bio-markers can be used to predict the PDCA stage the patient is in provided there is more data. 
+		The MLP neural network yields an accuracy of 0.70 in predicting PDAC stages using non- invasive methods. Given the presence of unbalanced ’Stage’ data in the original data-set, 
+		we posit that future work in predicting PDAC stages should focus on gathering more balanced and updated data pertaining to the various stages. 
+		Consequently, we propose the establishment of a certified pancreatic bio-marker platform for standardizing biomarker collection. 
+		This would improve machinelearning models through the acquisition of representative training data and enhance the clinical predictive results using an incremental learning algorithm.<br
+		The accurate staging of the disease can have a significant influence on patients' decision-making concerning their treatment.
+		Advanced stages might necessitate palliative care, focusing on symptom management and quality of life, whereas early stages could benefit from more aggressive interventions. 
+		Utilizing non-invasivestaging methods can reduce patient discomfort and the risks associated with invasive procedures, thereby leading to improved patient care. 
+		The ability to predict PDAC stages using noninvasive methods carries substantial implications for patient outcomes, healthcare costs, and patient care quality. 
+		Early detection and accurate staging could better equip healthcare systems to devise personalized, cost-effective treatment strategies, 
+		thereby enhancing both survival rates and patients’ quality of life.
+	</p>
+</div>
+ <!-- Button to view more -->
+<button onclick="toggleVisibility('project1-details')">View Project</button>
+</article>
+
+
+
+<article style="text-align: left;"> <!-- Inline CSS to align text to the left -->
+	<header>
+		<h2><a href="https://github.com/cathyai0320/cropsense">Project 2:CropSense - The Intelligent Crop Rotation Planner</a></h2>
+	</header>
+	<a href="https://github.com/cathyai0320/cropsense" class="image fit"><img src="images/cropsense.jpg" alt="" /></a>
+	
+	<p>This project aims to provide a revolutionary solutions to the modern challenges that farmers faces by harnessing the power of Machine Learning and Generative A.I. 
+		This project develops a user-friendly UI-interface that farmers can access and features a Crop Recommender model that predicts the most suitable crops to cultivate based on environmental and soil conditions.
+		We integrate a friendly, expert farmer chatbot to our application so that farmers can ask directly questions and will be given concise, accurate and meaningful answers.
+	</p>
+	 <!-- Hidden Content -->
+<div id="project2-details" style="display: none;">
+		   <p style="margin: 0;"><a href="https://www.womeninai.co/wai-hackathon-canada" target="_blank"><i>Click here for the competition details</i></a></p>
+		   <p style="margin: 0;"><a href="https://www.womeninai.co/_files/ugd/878656_fa3000c258594eee9827520e11a4afc1.pdf" target="_blank"><i>Click here for the challenge details</i></a></p>
+		   
+	<ul class="actions special">
+	</ul>
+	
+
+	<p style="margin: 0;">The Crop Recommender dataset is sourced from <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/4GBWFV" target="_blank"><i>Harvard dataverse</i></a>. 
+		The dataset encompasses a comprehensive collection of agricultural data points, amounting to 1697 rows, distributed across 8 distinct columns.
+		These columns represent various environmental and soil composition features pertinent to crop cultivation, namely Nitrogen (N), Phosphorus (P), Potassium (K), 
+		temperature, humidity, pH level, and rainfall, which are crucial factors in determining the optimal growing conditions for a variety of crops. 
+		The dataset is structured to classify these agricultural data points into 15 different crop categories as labels. 
+		Each category serves as a potential output based on the input features, aiming to predict the most suitable crop type given the environmental and soil conditions. 
+		This dataset provides a valuable resource for developing machine learning models that can aid in the optimisation of agricultural practices by predicting the most 
+		appropriate crops to cultivate under specific environmental conditions. </p>
+	<p style="margin: 0;">For the knowledge-based AI farming advisor chatbot, the dataset is sourced from <a href="https://github.com/JonaOmara/AgroQA-Dataset/blob/main/AgroQA%20Dataset.csv" target="_blank"><i>a research paper</i></a>. 
+		The authors conducted research in a rural community of smallholder farmers. A total of 100 farmers participated in the research, performing diagnostics on both healthy plants and plants suffering from four major conditions. 
+		The feedback from farmers was gathered and combined with the interviews the researchers conducted to collect farming-related information, resulting in this question-and-answer dataset.</p>
+	<br />
+	<ul>
+		<strong>i. Crop Recommender</strong><br />
+		The Crop Recommender is a supervised learning model developed using Python. Its development consists of several stages: data collection, data exploration, data preprocessing, 
+		model training, performance evaluation, and model serving. The best model will be exported to pickle file format and served on GCP Cloud Run to the backend endpoints.<br />
+		<a href="#" class="image fit"><img src="images/mlm architecture.jpg" alt="The Crop Recommender Model Pipeline" /></a>	
+		<ul>
+			  <p> The Crop Recommender Model Pipeline consisted the following:</p>
+			  <li>Data collection: Research was conducted to determine farmers' needs and discover datasets for CropSense Crop Recommender.</li>
+			  <li>Data exploration: Initial investigations were carried out to reveal the characteristics of the dataset and determine what should be done with it to fit into the machine learning model.
+			  <li>Data preprocessing and Feature extraction: </li>
+			     <ul>
+					<li>Principal Component Analysis (PCA) is carried out to simplify complex, high-dimensional agricultural data into principal components</li>
+					<a href="#" class="image fit"><img src="images/pca.jpg" alt="" /></a>	
+					<p>PCA helps in identifying significant variances and patterns within the data, e.g. clusters for unique crop conditions and specific crop separation.</p>
+					<li>Standard Scaling to ensure that each component feature contributes equally to the model by centering the data around 0. </li>
+					<a href="#" class="image fit"><img src="images/standard scaling.jpg" alt="" /></a>	
+					<p>For our Naïve Bayes Supervised Learning model, this is very crucial since this model assumes that the features follow a normal distribution..</p>
+					<li>Data Aggregation to compute the mean values of features for each crop label</li>
+					<a href="#" class="image fit"><img src="images/standard deviation.jpg" alt="" /></a>	
+					<p>This process summarizes the central tendency of the feature for each crop type – crucial for understanding the overall conditions favorable for each crop.</p>
+					<li>Boxplots gives a visual summary of the statistical distribution of the data</li>
+					<a href="#" class="image fit"><img src="images/boxplots.jpg" alt="" /></a>	
+					<p>In CropSense, these data are used to showcase specific environmental preferences and nutrient requirements of each crop, which is critical for formulating customized farming practice. </p>
+					<li>Correlation matrix to get insights into how different features are related to each other</li>
+					<a href="#" class="image fit"><img src="images/cm cropsense.jpg" alt="" /></a>	
+					<p>For CropSense, this was crucial in understanding the interdependencies between soil nutrients, climate conditions and their impact on crop growth.</p>
+				<li>Model Training: The supervised learning model is then trained using the pre-processe data</li>
+				<li>Performance evaluation: Evaluate the models by comparing different metrics like accuracy, precision, recall, and F1-score</li>
+				<li>Model serving: Deploy the model to production.</li>
+				</ul>
+		<strong>ii. Knowledge-based AI farming advisor</strong><br />
+				<p> It is a customized chatbot that leverages a large language model (LLM) to understand farmers' queries and retrieve relevant responses by performing semantic searches 
+					within our knowledge database.
+					To implement a customized farming chatbot, retrieval augmented generation (RAG) is used to augment LLM knowledge with additional data. 
+					The RAG application consists of indexing as well as reviewal and generation components. Below is the architecture of the two components:
+					<li> Indexing</li>
+					<a href="#" class="image fit"><img src="images/indexing.png" alt="" /></a>
+						<ul>
+							<li>Data collection: Research was conducted to determine farmers' needs and discover datasets for CropSense Crop Recommender.</li> 
+							<li>Data exploration:	Initial investigations were carried out to understand the dataset.</li> 
+							<li>Splitting and embedding: The data will be split into smaller chunks for indexing. Embedding will be performed to generate mathematical representations of the words
+					  		 in a lower-dimensional space.</li> 
+							<li>Data storage: The vectors generated in the Splitting and embedding stage will be stored in a vector database and used for search within the CropSense knowledge database.</li> 
+						</ul>
+					<li> RAG</li>
+					<a href="#" class="image fit"><img src="images/RAG.png" alt="" /></a>
+					<ul>	
+				  		<li>Retrieval: User input was converted to its mathematical representation format. Relevant information will be extracted from the CropSense knowledge database.</li>
+				  		<li>Generation: Langchain’s Retrieval Augmented Generation (RAG) chain will combine predefined prompts with search results from the retrieval stage, which are then passed 
+						to a large language model (LLM) to generate human-interpretable answers.</li>
+					</ul>
+				
+		<p> Handling of unseen data:</p>
+				<ul>
+					<li>Simulating User Input:	To test how the model would respond to different questions.</li>
+					<li>Checking for Hallucinations: To avoid hallucinations, prompt engineering will be performed to guide the model’s responses. </li>
+					<li>Gathering User Satisfaction Rates: This is a proposed solution but hasn't been applied yet</li>
+					<li>Evaluating Performance with Unseen Data: Testing the chatbot with unseen data and evaluating how the AI advisor would respond. This helps us to evaluate the chatbot's performance.</li>
+				</ul>
+		<strong>Our System Interface</strong>
+				<li>Sign in / Sign up pages</li>
+				<a href="#" class="image fit"><img src="images/signup.jpg" alt="" /></a>
+				<li>Home Page</li>
+				<a href="#" class="image fit"><img src="images/homepage.jpg" alt="" /></a>
+				<li>User Profile Page</li>
+				<a href="#" class="image fit"><img src="images/profile.jpg" alt="" /></a>
+				<li>Crop Recommender Page (Supervised Machine Learning Model)</li>
+				<a href="#" class="image fit"><img src="images/supervised.jpg" alt="" /></a>
+				<li>A.I. Farming Advisor Page (LLM Chatbot)</li>
+				<a href="#" class="image fit"><img src="images/llm.jpg" alt="" /></a>
+			
+		<strong>Data flow Diagram:</strong>
+				<a href="#" class="image fit"><img src="images/architecture.jpg" alt="" /></a>
+				<p>The FReMP architecture, standing for Flask, ReactJS, MongoDB, and Python, is used for developing the solution. 
+					This architecture combines the strengths of each technology to create a robust and scalable solution. </p>
+		<strong>System Architecture Diagram:</strong>
+				<a href="#" class="image fit"><img src="images/systemarchi.jpg" alt="" /></a>
+				<p>The back-end application is responsible for managing requests such as authentication and queries from the front-end application.
+				 It serves as the backbone of CropSense system, containing the core business logic and handling data management tasks. Furthermore, 
+				 it facilitates integration with both internal and external applications. </p>
+
+	
+</div>
+ <!-- Button to view more -->
+<button onclick="toggleVisibility('project2-details')">View Project</button>
+</article>
+
+
+<article style="text-align: left;"> <!-- Inline CSS to align text to the left -->
+	<header>
+		<h2><a href="https://github.com/cathyai0320/A.I./blob/main/Text%20Sentiment%20analysis.ipynb">Project 3: Sentiment Analysis Using Lexicon, Machine Learning and LLM models</a></h2>
+	</header>
+	<a href="https://github.com/cathyai0320/A.I./blob/main/Text%20Sentiment%20analysis.ipynb" class="image fit"><img src="images/porject3.png" alt="" /></a>
+	
+	<p>This project identifies the tone of a sentiment based on a product review by using Lexicon (VADER and Texblob). It predicted a good accuracy of analysing the sentiment but we further
+		improve it by using Machine Learning Models and got even more better accuracy using state-of-the-art Large Language Models also known as LLM.
+	</p>
+	 <!-- Hidden Content -->
+<div id="project3-details" style="display: none;">
+		  
+	<ul class="actions special">
+	</ul>
+	
+
+	<p style="margin: 0;">We begin the process by conducting initial investigation of the dataset sourced from <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews" target="_blank"><i>Amazon product review datasets</i></a>. 
+		There are a total of 602,777 reviews with 12 rows. </p>
+		<p style="margin: 0;">Below are the detail data-preprocessing steps that are being conducted: </p>
+		<li>i. Handle missing values by removing rows that are irrelevant or  does not contains any values at all</li>
+		<li>ii. Removing duplicates as they can skew the model's performance</li>
+		<li>iii. Removing long messages as they are they are outliers in terms of content length or could be less efficient to process due to their size.</li>
+		<li>iv. Print the review across all products using 20 bins</li>
+		<a href="#" class="image fit"><img src="images/reviewbins.png" alt="" /></a>	
+		<p>A majority of products having a count in the lower review range and a few with significantly higher numbers.</p>
+		<li>v. Calculate the average number of reviews per product and generate a distribution count</li>
+		<p> We found out that there is a significant disparity in the number of reviews per product, with an average of 47.44 reviews but a high variance, 
+			ranging from a single review for some products to 2040 reviews for the most-reviewed product. This indicates a skewed distribution where a few products
+			have a majority of the reviews, which could influence the analysis if not addressed.</p>
+		<li>vi. Count the number of reviews per user</li>
+		<a href="#" class="image fit"><img src="images/distributioncount.png" alt="" /></a>	
+		<p>The results depicts a highly skewed distribution where a small number of users have posted a disproportionately large number of reviews, 
+			while the vast majority have posted far fewer, suggesting a potential user engagement imbalance in the dataset.</p>
+		<p> Since the datasets consisted of more than 600,000 reviews and due to the limitation of available computing power in the moment, 
+			we only chose to process on 2000 reviews and made sure that there is an equal ditribution amongst all ratings.</p>
+		<li>vii. Print a descriptive statistics of review lengths to give more insights on the data after sampling</li>
+		<a href="#" class="image fit"><img src="images/balance distribution.png" alt="" /></a>	
+		<li>viii. Generate boxplots and histograms for outlier detection</li>
+		<a href="#" class="image fit"><img src="images/proj3boxplots.png" alt="" /></a>		
+		<a href="#" class="image fit"><img src="images/proj3scatterplots.png" alt="" /></a>	
+		<li>ix. Labeling the data as Positive, Neutral and Negative for sentiment analysis</li>
+		<li>x. Perform further pre-processing (only applicable for Lexicon models):
+		lowercasing, removing punctuations, removing stopwords, tokenizations. Note: Tokenization is not needed explicitly for TextBlob</li><br />
+	
+	<p>The pre-processed data is then fed to the models and a comparison of their results is printed. </p>
+	<ul>	
+	<li>For Lexicon models:</li>
+			
+		<a href="#" class="image fit"><img src="images/proj3lexiconpredictionsummary.png" alt="" /></a>	
+		<a href="#" class="image fit"><img src="images/proj3lexiconperformance.png" alt="" /></a>
+		<ul>
+		<li> VADER (Raw) shows the highest accuracy, indicating better overall performance in classifying the correct sentiments based on raw text.</li>
+		<li>Similarly, VADER (Raw) achieves the highest precision, suggesting it is more reliable in the proportion of true positive identifications.</li>	
+		<li>VADER (Raw) also leads in recall, which means it is effective at identifying all relevant instances.</li>
+		<li>Reflecting a balance between precision and recall, VADER (Raw) again reports the highest score, indicating strong overall performance.</li>
+		</ul>
+	<li>For Machine Learning models:</li>
+		<a href="#" class="image fit"><img src="images/proj3lexiconpredictions.png" alt="" /></a>
+		<ul>
+			<li>Logistic Regression and SVM exhibit similar performances with SVM slightly leading. Both models demonstrate a better ability to predict Positive sentiments
+				 accurately, reflecting higher precision and recall for positive reviews.</li>
+			<li>The machine learning models outperform the lexicon-based sentiment analysis tools in terms of overall accuracy and other metrics.</li>
+		</ul>
+	</ul>
+	<p>For Large Language Models:</p>
+		<a href="#" class="image fit"><img src="images/proj3llmpredictions.png" alt="" /></a>
+		<ul>
+			<li>LLM (GPT-2) achieves the highest accuracy, indicating superior performance in classifying the correct sentiments based on raw text.</li>
+			<li>LLM (GPT-2) also leads in precision, suggesting it is more reliable in the proportion of true positive identifications.</li>
+			<li>LLM (GPT-2) also reports the highest recall, which means it is effective at identifying all relevant instances.</li>
+			<li>Reflecting a balance between precision and recall, LLM (GPT-2) again reports the highest score, indicating strong overall performance.</li>
+		</ul>	
+</div>
+ <!-- Button to view more -->
+<button onclick="toggleVisibility('project3-details')">View Project</button>
+</article>
+
+
+<article style="text-align: left;"> <!-- Inline CSS to align text to the left -->
+	<header>
+		<h2><a href="https://github.com/loct824/comp264_CML_group4_2024.git">Project 4: WOW Photos</a></h2>
+	</header>
+	<a href="https://github.com/loct824/comp264_CML_group4_2024.git" class="image fit"><img src="images/proj4logo.jpg" alt="" /></a>
+	
+	<p>This project aims to revolutionize how individuals manage and retrieve their digital photo collections. Utilizing advanced AI technologies, the project will enable 
+		users to interact with their photos using natural language queries, making the photo organization and retrieval process more intuitive and efficient.
+	</p>
+	 <!-- Hidden Content -->
+<div id="project4-details" style="display: none;">
+		  
+	<ul class="actions special">
+	</ul>
+
+
+	<p style="margin: 0;">Scope of the Project:</p>
+		<li>Speech to Text Conversion: Convert user-spoken queries into text to facilitate search functions.</li>
+		<li>Image Recognition and Tagging: Automatically analyze and tag photos with relevant metadata such as locations, people, and activities using AWS Rekognition.</li>
+		<li>Dynamic Image Search: Develop a system that matches text queries with image tags to fetch relevant photos based on user requests.</li>
+		<li>Database Storage and Management: Utilize AWS DynamoDB for efficient storage and retrieval of photo metadata and tags.</li>
+		<li>User Interface: Design a user-friendly interface that supports voice input and displays photos in an organized manner.</li><br
+	
+	<p>Architectural Diagram:</p>
+		<a href="#" class="image fit"><img src="images/proj4archidiagram.jpg" alt="" /></a>
+	<li>Endpoints:</li>
+	<ul>
+		<li>Upload image Endpoint: Handles the uploading of images to the system.</li>
+		<li>Celebrity Image Query Endpoint: Queries a database to retrieve metadata and URLs of images associated with a celebrity.</li>
+		<li>Name Entity Recognition Endpoint: Identifies and extracts named entities, such as celebrity names, from text data.</li>
+	</ul>
+	<p>Services:</p>
+	<ul>
+		<li>Rekognition Service: Identifies celebrities within images through image analysis.</li>
+		<li>Storage Management Service: Manages the storage and extraction of metadata from images in DynamoDB, as well as image storage in S3 buckets.</li>
+		<li>Speech-to-text Transcription Service: Converts audio files into text. </li>
+	</ul>
+	<p>Interaction Diagram:</p>
+		<a href="#" class="image fit"><img src="images/proj4interactiondia.jpg" alt="" /></a>
+	<p>Workflow:</p>
+	<ul>
+		<li>1. Admin uploads images through the Upload Image Endpoint.</li>
+		<li>2. The Upload Image Endpoint stores images in an Amazon S3 bucket.</li>
+		<li>3. The Upload Image Endpoint utilizes the Rekognition Service to extract metadata, including face IDs, bounding box coordinates, and related attributes.</li>
+		<li>4. The Upload Image Endpoint stores the extracted metadata in DynamoDB through the Storage Management Service.</li>
+		<li>5. The Storage Management Service returns the insert status to the Upload Image Endpoint for error handling and tracking of the upload process.</li>
+		<li>6. The Upload Image Endpoint returns the upload status to the Admin to confirm the success or failure of the upload process.</li>
+	</ul>
+	<p>Voice-Enabled Image Retrieval Data Flow Diagram:</p>
+		<a href="#" class="image fit"><img src="images/proj4userinteractionanddataflow.png" alt="" /></a>
+	<p>Workflow:</p>
+	<ul>
+		<li>1. The voice clip will be passed to Wow Photos.</li>
+		<li>2. The voice clip will be uploaded to the Voice-to-Text Endpoint.</li>
+		<li>3. The Voice-to-Text Endpoint will pass the file to a Speech-to-Text Transcription Service to transcribe a voice clip to text.</li>
+		<li>4. The text will then be passed to the Name Entity Recognition (NER) Endpoint.</li>
+		<li>5. The Name Entity Recognition Endpoint will call the NER service to identify entities such as celebrity names.</li>
+		<li>6. The Name Entity Recognition Endpoint will pass the name of the celebrity to Wow Photos.</li>
+		<li>7. Wow Photos queries the Celebrity Image Query Endpoint to retrieve metadata and URLs from DynamoDB.</li>
+		<li>8. The retrieved images are displayed to the user.</li>
+	</ul>
+	<p>System Interface: Upload</p>
+		<a href="#" class="image fit"><img src="images/proj4uploadinterface.jpg" alt="" /></a>
+	
+	<p>System Interface: Mainpage</p>
+		<a href="#" class="image fit"><img src="images/proj4mainpage.jpg" alt="" /></a>
+		<p>The Wow Photo main page allows users to record audio and extract images from the database based on the names mentioned in the speech.</p>
+	<p>System Interface: Search and Retrieval:</p>
+		<a href="#" class="image fit"><img src="images/proj4searchandretrieval.jpg" alt="" /></a>
+		<p>The search and retrieval page displays images based on the user's voice query. The images are retrieved from the database based on the names mentioned in the speech.</p>
+	
+	<br />
+
+	<p>This project has successfully harnessed cutting-edge AI technologies to revolutionize photo management, delivering an intuitive and efficient system that responds to 
+	natural language queries. Users can now easily upload their photos and use voice commands to search for specific celebrities. The application employs advanced voice 
+	recognition technology to convert spoken words into text, enabling users to simply say the name of the desired celebrity. With the power of image analysis and 
+	celebrity recognition, the application automatically organizes and tags the photos based on the identified celebrities. This seamless integration of voice-to-text 
+	recognition and image retrieval allows users to quickly locate and manage their digital photo collections without the need for manual sorting or tagging. 
+	The intuitive interface and voice-driven interaction provide a convenient and efficient way for users to explore and engage with their celebrity photo collections. 
+	The project's integration of services like AWS Transcribe, AWS Rekognition, and AWS DynamoDB has laid a strong foundation for a scalable and user-friendly application. 
+	"Wow Photos" stands out in the digital landscape for its innovative use of AI, significantly enhancing the user experience in managing personal memories. 
+	As we look to the future, the project anticipates continuous improvement, integrating feedback and evolving with technological advances to meet and exceed user 
+	expectations.</p>
+	
+</div>
+ <!-- Button to view more -->
+<button onclick="toggleVisibility('project4-details')">View Project</button>
+
+</article>
+
+<article style="text-align: left;"> <!-- Inline CSS to align text to the left -->	
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Savedbygrace</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				function toggleVisibility(elementId) {
+					var element = document.getElementById(elementId);
+					if (element.style.display === 'none') {
+						element.style.display = 'block';
+					} else {
+						element.style.display = 'none';
+					}
+				}
+				</script>
+
+	</body>
+</html>
